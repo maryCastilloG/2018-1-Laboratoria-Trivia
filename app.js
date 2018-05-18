@@ -1,8 +1,9 @@
 window.onload = function() {
-    var name = prompt("¿cuál es tu nombre?");
+   
     document.getElementById("name").innerText = name;
 
-    var wantToPlay = prompt("¿quieres jugar? s/n");
+    document.getElementById("demo").innerHTML = "Click Me!"
+
     if (wantToPlay.toLowerCase() == "s") {
         var answer1 = prompt("¿han egresado hombres en Laboratoria? s/n");
         if (answer1.toLowerCase() == "n") {
@@ -19,7 +20,7 @@ window.onload = function() {
             "</div>";
         }
 
-        var answer2 = prompt("¿hay laboratoria en concepción? s/n");
+      
         if (answer2.toLowerCase() == "n") {
             document.getElementById("rightAnswersText").innerHTML =
                 document.getElementById("rightAnswersText").innerHTML +
